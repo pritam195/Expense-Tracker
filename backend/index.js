@@ -25,10 +25,10 @@ mongoose
   });
 
 app.use(
-    cors({
-      origin: "http://localhost:5173",
-      credentials: true,
-    })
+  cors({
+    origin: "https://expense-tracker-zujo.vercel.app",
+    credentials: true,
+  })
 );
 
 app.use(express.json());
