@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home.jsx"
 import Auth from "./Pages/Auth.jsx"
 import Expenses from "./Pages/Expenses.jsx";
+import Dashboard from "./Pages/Dashboard.jsx"
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       <Route index element={<Home />} />
       <Route path="/login" element={<Auth />}/>
       <Route path='/signup' element={<Auth />}/>
-      <Route path='/expenses' element={<Expenses/>} />
+      <Route path='/expenses' element={<Expenses />} />
+      <Route path='/dashboard' element={<Dashboard/>}/>
     </Routes>
   )
 }

@@ -37,7 +37,9 @@ app.use(cookieparser());
 
 const authroutes = require('./routes/authroutes');
 const expenseRoutes = require('./routes/expenseRoutes');
+const dashRoutes = require('./routes/dashRoutes');
 
 app.use("/api/auth", authroutes);
 app.use('/api/expense', expenseRoutes);
+app.use('/api/dash', dashRoutes);
 
